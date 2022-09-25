@@ -1,0 +1,51 @@
+#skillset-heading{
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(30, 36, 211),
+      0 0 82px rgb(30, 36, 211),
+      0 0 92px rgb(30, 36, 211),
+      0 0 102px rgb(30, 36, 211),
+      0 0 151px rgb(30, 36, 211);
+      display: grid;
+      font-size: xxx-large
+  }
+
+@media only screen and (max-width: 2680px) {
+    .skillTag{
+        height: 100px;
+        width: 10rem;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid white;
+        border-radius: 10px;
+        display: grid;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+    .skillTag > img{
+        height: 60px;
+        width: 65px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #skillset-box{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+    .skillSet{
+        margin: 0rem 15rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .skillSet{
+        margin: 0rem 1.5rem;
+    }
+}

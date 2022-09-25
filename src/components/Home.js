@@ -1,8 +1,8 @@
 import { DpHolder } from "./DpHolder";
 import { Navbar } from "./Navbar";
 import { Project } from "./Project";
-import { Skills } from "./Skills";
 import { About } from "./About";
+import Skillset from "./Skillset";
 export function Home(){
     return (
         <div className="App">
@@ -10,7 +10,10 @@ export function Home(){
           <DpHolder/>
           <About/>
           <Project/>   
-          <Skills/>   
+          <Skillset/>
+          <div>
+            
+          </div>
         </div>
       );
 }

@@ -19,12 +19,7 @@
     float: right;
 } */
 
-.about-me {
-    display: grid;
-    height: 145px;
-    width: 100%;
-    place-content: center;
-}
+
 
 @media only screen and (max-width: 2680px) {
 
@@ -32,5 +27,20 @@
         letter-spacing: 1px;
         line-height: 1.6;
         width: 800px;
+    }
+    .about-me {
+    display: grid;
+    height: 286px;
+    width: 100%;
+    place-content: center;
+}
+}
+
+@media only screen and (max-width: 600px) {
+
+    #paragraph{
+        letter-spacing: 1px;
+        line-height: 1.6;
+        width: 400px;
     }
 }

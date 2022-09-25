@@ -9,7 +9,7 @@
 
 @media only screen and (max-width: 2680px) {
   .box{
-    position: absolute;
+    /* position: absolute; */
     padding: 40px 10px;
     display: grid;
     gap: 1rem;
@@ -178,8 +178,8 @@ html {
 }
 body {
   height: inherit;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   font-family: 'Fira Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
