@@ -6,7 +6,7 @@ import Skillset from "./Skillset";
 export function Home(){
     return (
         <div className="App">
-          <Navbar/>    
+          {/* <Navbar/>     */}
           <DpHolder/>
           <About/>
           <Project/>   
