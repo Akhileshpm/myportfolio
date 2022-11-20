@@ -6,33 +6,41 @@
 .dpHolder img{
     padding-top: 2vh;
     padding-left: 40px;
-    height: 250px;
+    position: absolute;
+    right: 16rem;
+    bottom: 12rem;
+    height: 21rem;
     float: left;
-    width: 200px;
+    width: 19rem;
     border: none;
-    border-radius: 204px / 215px;
+    border-radius: 175px 150px 100px 200px;
     text-overflow: ellipsis;
-    display: none;
-}
-
-/* .boundary > #title{
-    display: flex;
-    font-size:xx-large;
-    float: right;
-    padding: 15px 17px;
-    color: rgb(0, 0, 0);
-}
-.boundary{
     display: block;
-    background-color: rgba(255, 255, 255, 0.914);
-    height: 200px;
-    width: 100%;
-} */
+}
 
 @media only screen and (max-width: 2680px) {
     .typeWriter > h1 > span {
         display: block;
+        font-size: 3rem;
         height: 40px;
+    }
+    .boundary{
+        display: block;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+    }
+    .typeWriter {
+        height: fit-content;
+        background: #fff;
+        padding-bottom: 156px;
+        width: 60vw;
+        position: absolute;
+        bottom: 20vh;
+        left: 0vh;
+    }
+    .boundary div.typeWriter h1 p{
+        color: rgb(5, 100, 87) !important;
+        font-size: 3rem;
     }
 }
 
@@ -48,6 +56,7 @@
     }
     .boundary{
         display: block;
+        height: 54vh;
     }
     .typeWriter > h1 > span {
         display: block;

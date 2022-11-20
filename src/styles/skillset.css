@@ -1,46 +1,66 @@
 #skillset-heading{
-    color: #fff;
-    text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px rgb(30, 36, 211),
-      0 0 82px rgb(30, 36, 211),
-      0 0 92px rgb(30, 36, 211),
-      0 0 102px rgb(30, 36, 211),
-      0 0 151px rgb(30, 36, 211);
-      display: grid;
-      font-size: xxx-large
+    color: lightgreen;
+    display: grid;
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    margin-top: -40px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+          0deg,
+         rgb(5, 100, 87),
+         rgb(5, 100, 87) 50%,
+          lightgreen 50%);
+          background-size: 100% 200%;
+          background-position: 0% 0%;
   }
-
+#skillset-heading.active {
+    transition: all 5s cubic-bezier(0.000, 0.000, 0.230, 1);
+    background-position: 100% 100%;
+}
 @media only screen and (max-width: 2680px) {
     .skillTag{
-        height: 100px;
-        width: 10rem;
-        background-color: rgb(255, 255, 255);
-        border: 1px solid white;
+        height: 127px;
+        width: 15rem;
+        background-color: rgb(5, 100, 87);
         border-radius: 10px;
         display: grid;
         align-items: center;
         margin-top: 1.5rem;
     }
     .skillTag > img{
-        height: 60px;
-        width: 65px;
+        height: 80px;
+        width: 85px;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        background-color: rgb(5, 100, 87);
     }
     #skillset-box{
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin: 1rem;
+        background: rgb(9, 174, 127);
+        display: inline-grid;
+        padding: 1.5rem 4rem;
+        height: 25rem;
+        width: 60rem;
+        border-radius: 30px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, calc(40% - 40px));
+        grid-template-rows: minmax(150px, 1fr);
+        box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12)
     }
-    .skillSet{
-        margin: 0rem 15rem;
+    .skillSet {
+        background: rgb(255, 255, 255);
+        height: 100vh;
+        width: 100vw;
     }
 }
 

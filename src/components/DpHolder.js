@@ -4,7 +4,7 @@ import { useTypewriter } from "react-simple-typewriter";
 
 export function DpHolder(){
     const {text} = useTypewriter({
-        words: ['MERN stack developer', 'Works at Qburst', 'Interested in Web development, ML, & AI'],
+        words: ['MERN stack developer', 'Works at Qburst', 'Interests : Web dev, ML, & AI'],
         loop: true
     })
 
