@@ -31,7 +31,7 @@
     }
     .typeWriter {
         height: fit-content;
-        background: #fff;
+        background: rgba(255, 255, 255, 0);
         padding-bottom: 156px;
         width: 60vw;
         position: absolute;

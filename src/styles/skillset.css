@@ -44,18 +44,13 @@
         height: 25rem;
         width: 60rem;
         border-radius: 30px;
-        overflow-x: scroll;
+        overflow-x: hidden;
         overflow-y: hidden;
+        scroll-behavior: smooth;
         grid-gap: 10px;
         grid-template-columns: repeat(4, calc(40% - 40px));
         grid-template-rows: minmax(150px, 1fr);
-        box-shadow:
-        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-        0 12.5px 10px rgba(0, 0, 0, 0.06),
-        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-        0 100px 80px rgba(0, 0, 0, 0.12)
+        box-shadow: 1px 12px 17px 6px grey;
     }
     .skillSet {
         background: rgb(255, 255, 255);
@@ -85,4 +80,30 @@
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+#left-btn, #right-btn {
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    margin: 0px 10px;
+    height: 3rem;
+    width: 3rem;
+    background: orange;
+    border-radius: 50px;
+    padding: 2px 2px;
+    font-size: 2rem;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+}
+#left-btn:hover {
+    color: white;
+}
+#right-btn:hover {
+    color: white;
 }
