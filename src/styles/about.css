@@ -27,6 +27,7 @@
         letter-spacing: 1px;
         line-height: 1.6;
         width: 800px;
+        font-size: 1.4em;
     }
     .about-me {
     display: grid;

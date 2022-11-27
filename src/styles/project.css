@@ -1,11 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans:200,400,500);
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 .project-description {
   position: absolute;
@@ -67,21 +61,21 @@
     display: inline-block;
     zoom: 1;
     margin: 10px;
-    border: solid 1px transparent;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: #fff;  
     position: relative;
-    border-radius: 15px;
     width: 70%;
     height: 180px;
     display: inline-flex;
-    background: #eee;
+    background-image: linear-gradient(rgb(5, 100, 87), rgb(9, 174, 127));
     transition: all 0.5s;
   } 
    .outer h2{
     position: absolute;
     top: 2px;
-    left: 40%;
+    left: 0px;
+    right: 0px;
+    color: white;
   }
 
    .outer img{
@@ -127,18 +121,21 @@
     height: 0;
     content:'';
  } 
- .outer#project4 {
-    background-color: #ffffff;
- }
  .outer#project4::after, .outer#project3::after, .outer#project2::after, .outer#project1::after {
     bottom: 0;
-    background-color: #0370ff;
+    background-color: rgb(9,174,127);
  }
  #project1:hover::after, #project2:hover::after, #project3:hover::after, #project4:hover::after {
     width: 100%;
     height: 100%;
     border-radius: 10px;
  }
+ #projects-heading{
+  color: rgb(0, 0, 0);
+  display: grid;
+  font-size: 4em;
+  font-family: 'Poppins', sans-serif;
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -156,7 +153,9 @@
    .outer h2{
     position: absolute;
     top: 2px;
-    left: 20%;
+    left: 0%;
+    right: 0%;
+    color: white;
     z-index: 900;
   }
   .work-skills #tag{
@@ -178,7 +177,8 @@
 #projects-heading{
   color: rgb(0, 0, 0);
   display: grid;
-  font-size: xxx-large
+  font-size: 4em;
+  font-family: 'Poppins', sans-serif;
 }
  .outer{
   align-items: center;
@@ -203,12 +203,13 @@
     padding: 0%;
 }
 
-#tag{
+.tag{
     margin: 3px;
     padding: 3px;
     border-radius: 5px;    
     color: rgb(255, 255, 255);
-    background-color: rgb(170, 105, 113);
+    /* background-color: rgba(0, 255, 42, 0.507); */
+    background-image: linear-gradient(rgb(25, 171, 151), rgb(9, 174, 127));
 }
 /* 
 #project2:hover{
@@ -267,7 +268,7 @@ div.container {
 div.header {
   height: auto;
   text-align: center;
-  background: slategrey;
+  background: rgb(120, 159, 197);
   color: ghostwhite;
   padding: 2.3rem 1rem 2.3rem 1rem;
   position: relative;
