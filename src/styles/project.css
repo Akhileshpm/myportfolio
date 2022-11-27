@@ -7,6 +7,37 @@
   border-radius: $radius;
 }
 
+.project-description {
+  position: absolute;
+  padding: .2rem;
+  left: 1%;
+  top:10%;
+  color: white;
+  font-size: .8em;
+  display: none;
+}
+.project-link-btn {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  bottom: 20px;
+  color: white;
+  font-size: 2em;
+  display: none;
+}
+.outer:hover .project-description {
+  display: block;
+  z-index: 10;
+}
+.outer:hover .project-link-btn {
+    display: block;
+    z-index: 10;
+}
+.outer .project-link-btn:hover {
+  font-size: 1.5em;
+  transition: all .2s ease-in;
+}
+
 @media only screen and (max-width: 2680px) {
   .box{
     /* position: absolute; */
@@ -19,28 +50,41 @@
 }
 
 @media only screen and (max-width: 2680px) {
-  .outer{
-      position: relative;
-      border-radius: 15px;
-      border:rgb(241, 162, 162) solid;
-      width: 70%;
-      height: 180px;
-      display: inline-flex;
-      background: #eee;
-      box-shadow: 5px 7px 7px 1px rgba(255, 84, 84, 0.937);
+  .my-projects {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    position: relative;
+    width: 90%;
+    /* height: 20%; */
+    background-color: rgb(255, 255, 255);
   }
-  .box .outer h2{
+  .outer {
+    min-width: 230px;
+    float: none;
+    display: inline-block;
+    zoom: 1;
+    margin: 10px;
+    border: solid 1px transparent;
+    border-radius: 15px;
+    background-color: #fff;  
+    position: relative;
+    border-radius: 15px;
+    width: 70%;
+    height: 180px;
+    display: inline-flex;
+    background: #eee;
+    transition: all 0.5s;
+  } 
+   .outer h2{
     position: absolute;
     top: 2px;
     left: 40%;
   }
-  .box .outer p{
-    position: absolute;
-    top: 51px;
-    left: 35%;
-    width: 309px;
-  }
-  .box .outer img{
+
+   .outer img{
     width: 130px;
     height: 171px;
     position: absolute;
@@ -62,6 +106,39 @@
     top: 67px;
     right: 26px;
   }
+  /* .outer4 {
+    position: relative;
+    display: inline-block;
+    min-width: 230px;
+    width:70%;
+    height: 180px;
+    transition: all 0.5s;
+    border-radius: 10px;
+ } */
+  .outer::after {
+    position: absolute;
+    z-index: 9;
+    content: '';
+    transition: all 0.2s ease;
+ }
+ #project1::after,#project2::after,#project3::after,#project4::after {
+    left: 0;
+    width: 100%;
+    height: 0;
+    content:'';
+ } 
+ .outer#project4 {
+    background-color: #ffffff;
+ }
+ .outer#project4::after, .outer#project3::after, .outer#project2::after, .outer#project1::after {
+    bottom: 0;
+    background-color: #0370ff;
+ }
+ #project1:hover::after, #project2:hover::after, #project3:hover::after, #project4:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+ }
 }
 
 @media only screen and (max-width: 600px) {
@@ -73,10 +150,10 @@
     width: 100%;
     place-items: center;
   }
-  .box .outer p{
+   .outer p{
     display: none;
   }
-  .box .outer h2{
+   .outer h2{
     position: absolute;
     top: 2px;
     left: 20%;
@@ -99,20 +176,11 @@
   }
 }
 #projects-heading{
-  color: #fff;
-  text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 102px #0fa,
-    0 0 151px #0fa;
-    display: grid;
-    font-size: xxx-large
+  color: rgb(0, 0, 0);
+  display: grid;
+  font-size: xxx-large
 }
-.box .outer{
+ .outer{
   align-items: center;
 }
 
