@@ -1,5 +1,5 @@
-import dp from "../img/dp.png";
-import "../styles/dpHolder.css";
+import dp from "../../img/dp.png";
+import "../../styles/dpHolder.css";
 import { useTypewriter } from "react-simple-typewriter";
 
 export function DpHolder(){

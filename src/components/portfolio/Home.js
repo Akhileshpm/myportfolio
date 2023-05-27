@@ -3,19 +3,17 @@ import { Navbar } from "./Navbar";
 import { Project } from "./Project";
 import { About } from "./About";
 import Skillset from "./Skillset";
-export function Home(){
-    return (
-        <div className="App">
-          <Navbar/>    
-          <DpHolder/>
-          <Skillset/>
-          <About/>
-          <Project/>   
-          <div>
-            
-          </div>
-        </div>
-      );
+export function Home() {
+  return (
+    <div className="App">
+      <Navbar />
+      <DpHolder />
+      <Skillset />
+      <About />
+      <Project />
+      <div></div>
+    </div>
+  );
 }
 // <!DOCTYPE html>
 // <html>
@@ -48,7 +46,7 @@ export function Home(){
 // <body>
 
 // <p>
-// <button onclick="myMove()">Click Me</button> 
+// <button onclick="myMove()">Click Me</button>
 // </p>
 
 // <div id ="myContainer">
@@ -70,8 +68,8 @@ export function Home(){
 //     if (pos ==  container.getBoundingClientRect().right) {
 //       pos = container.getBoundingClientRect().left;
 //     } else {
-//       pos++; 
-//       elem.style.left = pos + 'px'; 
+//       pos++;
+//       elem.style.left = pos + 'px';
 //     }
 //   }
 // }

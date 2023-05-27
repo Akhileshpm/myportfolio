@@ -1,7 +1,7 @@
-import "../styles/project.css";
-import resumeThumbnail from "../img/Resume_thumbnail.jpg";
-import emaily from "../img/emaily.jpg";
-import dice from "../img/dice.jpg";
+import "../../styles/project.css";
+import resumeThumbnail from "../../img/Resume_thumbnail.jpg";
+import emaily from "../../img/emaily.jpg";
+import dice from "../../img/dice.jpg";
 
 
 export function Project(){
