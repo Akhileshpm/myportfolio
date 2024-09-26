@@ -1,26 +1,52 @@
-import dp from "../img/dp.png";
-import "../styles/dpHolder.css";
-import { useTypewriter } from "react-simple-typewriter";
+import { useEffect, useRef, useState } from 'react';
+import dp from '../img/dp.png';
+import '../styles/dpHolder.css';
 
-export function DpHolder(){
-    const {text} = useTypewriter({
-        words: ['MERN stack developer', 'Works at Qburst', 'Interested in Web development, ML, & AI'],
-        loop: true
-    })
+export function DpHolder() {
+  const [isLarge, setIsLarge] = useState(false);
+  const dpRef = useRef(null);
 
-    return (
-        <div className="boundary">
-            <div className="dpHolder">
-                <img src={dp} alt="ffff"/>  
-            </div>
-            <span id="title">{' '}</span>
-            <div className="typeWriter">
-                <h1 style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}>
-                <p style={{color: 'white'}}>Hi there, I'm Akhilesh</p>
-                {/* <span>{' '}</span>  */}
-                <span style={{ color: 'red', fontWeight: 'bold' }}>{text}</span>
-                </h1>
-            </div>
-        </div>
-    );
-};
+  const handleImageClick = () => {
+    setIsLarge(!isLarge);
+    if (!isLarge) {
+      document.body.classList.add('plain-background');
+    } else {
+      document.body.classList.remove('plain-background');
+    }
+  };
+
+  const handleClickOutside = (event) => {
+    if (dpRef.current && !dpRef.current.contains(event.target)) {
+      setIsLarge(false);
+      document.body.classList.remove('plain-background');
+
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  return (
+    <div
+      className={`dp-holder ${isLarge ? 'large' : ''}`}
+      ref={dpRef}
+      onClick={handleImageClick}
+    >
+      <img alt='dp' src={dp}></img>
+      <div className={`cover-up ${isLarge ? 'rise' : ''}`}>
+        <span>Interests: '>' Modeling '>' Wildlife Photography '>' Techpreneur' </span>
+        <br />
+        <span>
+          Hobbies: '>' Playing Sports: Football, Cricket, Badminton, Volleyball
+          and the list goes on
+          <br/>
+          '>' Binge watch '>' Hang out with friends '>' Reading
+        </span>
+      </div>
+    </div>
+  );
+}

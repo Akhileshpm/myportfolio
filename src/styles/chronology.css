@@ -1,0 +1,67 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 20px;
+  margin: 50px 100px;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #ddd;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+  padding: 20px;
+  transition:   box-shadow 0.3s ease, font-size 0.3s ease;
+}
+.timeline-item:hover {
+  transform: scale(0.9);
+  font-size: 25px;
+}
+.timeline-item:hover .timeline-year {
+  font-size: 30px; /* Increase the font size of the year */
+  color: red;
+}
+.timeline-item:hover .dropdown {
+  transform: scale(1.01);
+  transition: transform 0.3s ease;
+}
+.timeline-year {
+  position: absolute;
+  left: 30px;
+  font-weight: bold;
+  font-size: 16px; /* Initial font size */
+  transition: transform 0.3s ease, font-size 0.3s ease; /* Smooth transition */
+}
+
+
+/* .timeline-year:hover { 
+   font-size: 30px;  
+   transform: scale(1.2);  
+} */
+
+
+.timeline-content {
+  color: black;
+  border-radius: 5px;
+}
+
+/* Dropdown styling */
+.toggle-btn {
+  margin: 10px 20px;
+  color: rgb(189, 10, 10);
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+
+

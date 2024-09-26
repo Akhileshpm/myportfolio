@@ -1,0 +1,32 @@
+.header {
+  padding: 20px 50px; /* Padding */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Ensures items are spread across the header */
+  align-items: center; /* Align items vertically */
+}
+
+.header h1 {
+  margin: 0 20px 0 0; /* Space between name and contact info */
+  font-size: 24px; /* Name font size */
+}
+
+.contact-info {
+  display: flex; /* Use flexbox for contact info */
+}
+ 
+.contact-info p {
+  margin: 0 10px; /* Space between paragraphs */
+}
+
+.contact-info p:hover {
+    text-decoration: dashed;
+}
+
+.contact-info a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.contact-info a:hover {
+  text-decoration: dashed; /* Underline on hover */
+}

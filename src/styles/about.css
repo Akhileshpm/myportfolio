@@ -1,30 +1,12 @@
-/* .about {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.914);
-    color: rgb(200, 231, 231);
-    height: 100px;
-    overflow-y: ;
-    text-align: center;
-    padding: 100px;
+.about-me > #paragraph {
+    width: 800px;
+    color: rgb(79, 75, 75);
 }
-.about p, .about span{
-    line-height: 300%;
-}
-.about p{
-    margin: -40px 450px;
-    float: center;
-    padding: 10px;
-    width: 50%;
-     height: 90%; 
-    float: right;
-} */
-
-
 
 @media only screen and (max-width: 2680px) {
 
     #paragraph{
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         line-height: 1.6;
         width: 800px;
     }
@@ -33,6 +15,7 @@
     height: 286px;
     width: 100%;
     place-content: center;
+    margin: 80px 0px;
 }
 }
 
