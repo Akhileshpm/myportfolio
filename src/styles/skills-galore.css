@@ -2,10 +2,60 @@
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
-
+    gap: 15px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .skills-galore .skill {
     text-align: center;
     padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.skills-galore .skill:hover {
+    transform: translateY(-5px);
+}
+
+/* Tablet screens */
+@media only screen and (max-width: 1024px) {
+    .skills-galore {
+        grid-template-columns: auto auto;
+        padding: 8px;
+        gap: 12px;
+    }
+
+    .skills-galore .skill {
+        padding: 15px;
+    }
+}
+
+/* Small screens */
+@media only screen and (max-width: 768px) {
+    .skills-galore {
+        grid-template-columns: auto auto;
+        padding: 8px;
+        gap: 10px;
+    }
+
+    .skills-galore .skill {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile screens */
+@media only screen and (max-width: 480px) {
+    .skills-galore {
+        grid-template-columns: 1fr;
+        padding: 5px;
+        gap: 8px;
+    }
+
+    .skills-galore .skill {
+        padding: 10px;
+        font-size: 12px;
+        width: 100%;
+    }
 }

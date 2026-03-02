@@ -19,6 +19,12 @@ const skills = [
   'GraphQL',
   'Typescript',
   'Docker',
+  'Grafana',
+  'CI/CD',
+  'Google Cloud Platform',
+  'SpannerDB',
+  'Kafka',
+  
 ];
 
 export default function SkillsGalore() {

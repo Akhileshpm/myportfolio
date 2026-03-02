@@ -32,3 +32,38 @@
     text-align: left;
     list-style-type: none;
 }
+
+/* Tablet screens */
+@media only screen and (max-width: 768px) {
+  .work-experience-info {
+    font-size: 16px;
+    padding: 8px 8px;
+    margin: 40px 8px 80px 8px;
+  }
+
+  .work-experience {
+    margin: 40px 0px;
+  }
+}
+
+/* Mobile screens */
+@media only screen and (max-width: 480px) {
+  .work-experience-info {
+    font-size: 14px;
+    padding: 8px;
+    margin: 30px 5px 60px 5px;
+  }
+
+  .work-experience {
+    margin: 25px 0px;
+  }
+
+  .dropdown .work-experience-info {
+    margin-top: 8px;
+    padding: 8px;
+  }
+
+  .work-experience-info ul {
+    padding-left: 15px;
+  }
+}
