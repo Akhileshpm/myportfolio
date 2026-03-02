@@ -8,7 +8,7 @@ const Header = () => {
       const { text } = useTypewriter({
         words: [
           'MERN stack developer',
-          'Works at Qburst',
+          'Works at Keyvalue Software Systems',
           'Interested in Web development, ML, & AI',
         ],
         loop: true,

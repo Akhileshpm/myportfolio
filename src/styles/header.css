@@ -3,6 +3,8 @@
   display: flex; /* Use flexbox for layout */
   justify-content: space-between; /* Ensures items are spread across the header */
   align-items: center; /* Align items vertically */
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .header h1 {
@@ -12,10 +14,13 @@
 
 .contact-info {
   display: flex; /* Use flexbox for contact info */
+  flex-wrap: wrap;
+  gap: 10px;
 }
  
 .contact-info p {
-  margin: 0 10px; /* Space between paragraphs */
+  margin: 0; /* Space between paragraphs */
+  white-space: nowrap;
 }
 
 .contact-info p:hover {
@@ -29,4 +34,50 @@
 
 .contact-info a:hover {
   text-decoration: dashed; /* Underline on hover */
+}
+
+/* Tablet and smaller screens */
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .contact-info p {
+    white-space: normal;
+    font-size: 14px;
+  }
+}
+
+/* Mobile screens */
+@media only screen and (max-width: 480px) {
+  .header {
+    padding: 10px 15px;
+    gap: 10px;
+  }
+
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .contact-info p {
+    font-size: 12px;
+  }
+
+  .contact-info a {
+    font-size: 12px;
+  }
 }

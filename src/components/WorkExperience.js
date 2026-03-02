@@ -2,7 +2,8 @@ import Chronology from './Chronology';
 import '../styles/work-experience-info.css';
 
 const workExperience = [
-  { year: '2021', details: "Software Engineer at Qburst" }
+  { year: '2025', details: "Software Engineer at Keyvalue Software Systems", company: 'company2' },
+  { year: '2021', details: "Software Engineer at Qburst", company: 'company1' }
 ];
 
 export default function WorkExperience() {

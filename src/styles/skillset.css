@@ -38,15 +38,60 @@
         justify-content: space-around;
         flex-wrap: wrap;
         margin: 1rem;
+        gap: 1rem;
     }
     .skillSet{
         margin: 0rem 15rem;
     }
 }
 
-@media only screen and (max-width: 600px) {
+/* Tablet screens */
+@media only screen and (max-width: 1024px) {
+    .skillSet {
+        margin: 0rem 5rem;
+    }
+    
+    .skillTag {
+        height: 80px;
+        width: 8rem;
+    }
+    
+    .skillTag > img {
+        height: 50px;
+        width: 55px;
+    }
+    
+    #skillset-heading {
+        font-size: xx-large;
+    }
+}
+
+/* Tablet/Mobile transition */
+@media only screen and (max-width: 768px) {
+    .skillSet {
+        margin: 0rem 2rem;
+    }
+    
+    .skillTag {
+        height: 70px;
+        width: 7rem;
+        margin-top: 1rem;
+    }
+    
+    .skillTag > img {
+        height: 40px;
+        width: 45px;
+    }
+    
+    #skillset-heading {
+        font-size: x-large;
+    }
+}
+
+/* Mobile screens */
+@media only screen and (max-width: 480px) {
     .skillSet{
-        margin: 0rem 1.5rem;
+        margin: 0rem 1rem;
     }
     .skillTag{
         height: 50px;
@@ -56,7 +101,9 @@
         border-radius: 10px;
         display: grid;
         align-items: center;
-        margin-top: 1rem;
+        margin-top: 0.8rem;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
     }
     .skillTag > img{
         height: 30px;
@@ -64,5 +111,15 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    
+    #skillset-heading {
+        font-size: large;
+        text-shadow:
+            0 0 3px #fff,
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px rgb(30, 36, 211),
+            0 0 40px rgb(30, 36, 211);
     }
 }

@@ -20,20 +20,24 @@
   margin-bottom: 20px;
   position: relative;
   padding: 20px;
-  transition:   box-shadow 0.3s ease, font-size 0.3s ease;
+  transition: box-shadow 0.3s ease, font-size 0.3s ease;
 }
+
 .timeline-item:hover {
   transform: scale(0.9);
   font-size: 25px;
 }
+
 .timeline-item:hover .timeline-year {
   font-size: 30px; /* Increase the font size of the year */
   color: red;
 }
+
 .timeline-item:hover .dropdown {
   transform: scale(1.01);
   transition: transform 0.3s ease;
 }
+
 .timeline-year {
   position: absolute;
   left: 30px;
@@ -41,13 +45,6 @@
   font-size: 16px; /* Initial font size */
   transition: transform 0.3s ease, font-size 0.3s ease; /* Smooth transition */
 }
-
-
-/* .timeline-year:hover { 
-   font-size: 30px;  
-   transform: scale(1.2);  
-} */
-
 
 .timeline-content {
   color: black;
@@ -61,6 +58,82 @@
   border: none;
   cursor: pointer;
   background-color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Tablet screens */
+@media only screen and (max-width: 768px) {
+  .timeline {
+    margin: 40px 30px;
+    padding-left: 15px;
+  }
+
+  .timeline:before {
+    left: 5px;
+  }
+
+  .timeline-item {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .timeline-year {
+    left: 20px;
+    font-size: 14px;
+  }
+
+  .timeline-item:hover {
+    font-size: 18px;
+  }
+
+  .timeline-item:hover .timeline-year {
+    font-size: 18px;
+  }
+}
+
+/* Mobile screens */
+@media only screen and (max-width: 480px) {
+  .timeline {
+    margin: 30px 15px;
+    padding-left: 10px;
+  }
+
+  .timeline:before {
+    left: 3px;
+    width: 1px;
+  }
+
+  .timeline-item {
+    padding: 12px 8px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .timeline-year {
+    left: 15px;
+    font-size: 12px;
+  }
+
+  .timeline-item:hover {
+    transform: scale(0.95);
+    font-size: 15px;
+  }
+
+  .timeline-item:hover .timeline-year {
+    font-size: 14px;
+  }
+
+  .toggle-btn {
+    margin: 8px 10px;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
 }
 
 

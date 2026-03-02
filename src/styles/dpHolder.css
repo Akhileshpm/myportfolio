@@ -42,34 +42,97 @@ body.plain-background {
     display: flex;
     color: white;
     font-size: large;
-    font-family:monospace;
+    font-family: monospace;
 }
+
 @media only screen and (max-width: 2680px) {
     .typeWriter > h1 > span {
         display: flex;
         height: 40px;
         position: absolute;
-        top:30px;
+        top: 30px;
         left: 35%;
-        /* padding: 0px 150px; */
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .dpHolder img{
-       width:100%;
+/* Tablet screens */
+@media only screen and (max-width: 1024px) {
+    .dp-holder.large img {
+        height: 350px;
+        width: 280px;
+        transform: translate(20px, 20px);
     }
-    .typeWriter{        
-        height: 200px;
+
+    .typeWriter > h1 > span {
+        left: 25%;
+        font-size: 20px;
+    }
+}
+
+/* Mobile screens */
+@media only screen and (max-width: 768px) {
+    .dp-holder.large img {
+        height: 280px;
+        width: 220px;
+        transform: translate(15px, 15px);
+    }
+
+    .typeWriter {
+        height: 150px;
         width: 100%;
-        /* display: block; */
+    }
+
+    .typeWriter > h1 > span {
+        left: 15%;
+        font-size: 16px;
+        height: auto;
+    }
+
+    .cover-up.rise {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .dpHolder img {
+        width: 100%;
+    }
+
+    .dp-holder.large img {
+        height: 200px;
+        width: 160px;
+        transform: translate(10px, 10px);
+    }
+
+    .typeWriter {
+        height: 120px;
+        width: 100%;
         z-index: 899;
     }
-    .boundary{
+
+    .boundary {
         display: block;
     }
+
+    .typeWriter > h1 {
+        font-size: 18px;
+        margin: 0;
+    }
+
     .typeWriter > h1 > span {
         display: block;
+        position: relative;
         height: auto;
+        left: auto;
+        top: auto;
+        font-size: 14px;
+    }
+
+    .cover-up.rise {
+        height: 100vh;
+    }
+
+    .cover-up.rise span {
+        font-size: medium;
     }
 }
